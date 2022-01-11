@@ -28,7 +28,8 @@ OUTPUT:
 ]*/
 
 export function getDogs(arr) {
-    return [];
+    const dogs = arr.filter(item => item.type === 'dog');
+    return dogs;
 }
 
 /*

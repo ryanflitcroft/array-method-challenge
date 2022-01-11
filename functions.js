@@ -51,7 +51,8 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
+    const nameArr = arr.map(item => item.name);
+    return nameArr;
 }
 
 /*

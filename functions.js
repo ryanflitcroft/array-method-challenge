@@ -99,7 +99,12 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    return [];
+    return arr.map(item => {
+        const copy = { ...item };
+        copy.isHungry = true;
+
+        return copy;
+    });
 }
 
 /*

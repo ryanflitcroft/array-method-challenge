@@ -38,7 +38,9 @@ OUTPUT:
 */
 
 export function getNamesOfDogs(arr) {
-    return [];
+    const dogNames = arr.filter(item => item.type === 'dog')
+        .map(item => item.name);
+    return dogNames;
 }
 
 

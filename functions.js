@@ -79,7 +79,13 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
+    const enEspanol = arr.map((item) => {
+        return {
+            nombre: item.name,
+            tipo: item.type
+        };
+    });
+    return enEspanol;
 }
 
 /*

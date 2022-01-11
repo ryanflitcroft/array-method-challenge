@@ -15,7 +15,8 @@ OUTPUT:
 */
 
 export function findByName(name, arr) {
-    return {};
+    const filterName = arr.filter(item => item.name === name);
+    return filterName[0];
 }
 
 /*

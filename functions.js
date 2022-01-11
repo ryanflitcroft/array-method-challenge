@@ -133,7 +133,9 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    const stringArr = arr.map(item => `${item.name}${item.type}`);
+
+    return stringArr;
 }
 
 /*
